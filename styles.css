@@ -360,6 +360,19 @@ a:hover { color: #c4b5fd; }
   content: '✓ '; color: var(--green); font-weight: 700;
 }
 
+/* --- Ecosystem cross-link cards --- */
+.ecosystem-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 16px; }
+.ecosystem-card {
+  display: flex; flex-direction: column; gap: 6px; padding: 20px 22px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  text-decoration: none; color: var(--text); transition: all .25s;
+}
+.ecosystem-card:hover { border-color: var(--eco-color, var(--accent)); background: var(--surface2); transform: translateY(-2px); }
+.ecosystem-icon { font-size: 1.6rem; }
+.ecosystem-card strong { font-size: 1rem; color: var(--eco-color, var(--accent)); }
+.ecosystem-desc { font-size: .82rem; color: var(--text2); line-height: 1.5; }
+.ecosystem-cta { font-size: .78rem; font-weight: 600; color: var(--eco-color, var(--accent)); margin-top: 4px; }
+
 /* --- Footer --- */
 .footer {
   text-align: center; padding: 40px 20px;

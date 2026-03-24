@@ -212,6 +212,26 @@
         <div class="plan-list" id="planList"></div>
       </div>
 
+      <!-- Ecosystem -->
+      <div class="section" style="padding-top:30px">
+        <h2 class="section-title">Continue Your AI Journey</h2>
+        <p class="section-sub">AI Sage diagnosed where you stand. Now <strong>discover</strong> tools and <strong>deepen</strong> your skills.</p>
+        <div class="ecosystem-grid">
+          <a href="https://myaicompass.vercel.app/" target="_blank" class="ecosystem-card" style="--eco-color:#60a5fa">
+            <span class="ecosystem-icon">🧭</span>
+            <strong>AI Compass</strong>
+            <span class="ecosystem-desc">Discover the right AI tools for your role — curated catalog, glossary, prompts, and trends.</span>
+            <span class="ecosystem-cta">Explore Tools →</span>
+          </a>
+          <a href="https://aimorpheus.vercel.app/" target="_blank" class="ecosystem-card" style="--eco-color:#34d399">
+            <span class="ecosystem-icon">⚡</span>
+            <strong>AIMorpheus</strong>
+            <span class="ecosystem-desc">Go deeper with structured AI learning paths — from fundamentals to GenAI, tracked at your pace.</span>
+            <span class="ecosystem-cta">Start Learning →</span>
+          </a>
+        </div>
+      </div>
+
       <!-- Actions -->
       <div style="text-align:center;padding:20px 0 40px" class="btn-group">
         <button class="btn btn-secondary" id="retakeBtn">↻ Retake Assessment</button>
