@@ -51,6 +51,14 @@
     $('.nav-toggle')?.addEventListener('click', () => {
       $('.nav-links')?.classList.toggle('open');
     });
+    // AI Lab dropdown on mobile (tap to toggle)
+    const labTrigger = $('.nav-lab-trigger');
+    if (labTrigger) {
+      labTrigger.addEventListener('click', e => {
+        e.preventDefault();
+        labTrigger.closest('.nav-lab')?.classList.toggle('open');
+      });
+    }
     // Brand click → home
     $('.nav-brand')?.addEventListener('click', e => { e.preventDefault(); showPage('home'); });
   }

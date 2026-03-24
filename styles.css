@@ -68,6 +68,29 @@ a:hover { color: #c4b5fd; }
 .nav-links a:hover, .nav-links a.active { color: var(--accent); }
 .nav-toggle { display: none; background: none; border: none; color: var(--text); font-size: 1.4rem; cursor: pointer; }
 
+/* Nav — AI Lab dropdown */
+.nav-lab { position: relative; }
+.nav-lab-trigger { cursor: pointer; }
+.nav-lab-dropdown {
+  display: none; position: absolute; right: 0; top: calc(100% + 12px);
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 8px; min-width: 240px; z-index: 200;
+  box-shadow: 0 12px 40px rgba(0,0,0,.5);
+}
+.nav-lab:hover .nav-lab-dropdown,
+.nav-lab-dropdown:hover { display: block; }
+.nav-lab-dropdown > a {
+  display: flex; align-items: center; gap: 10px; padding: 10px 12px;
+  border-radius: var(--radius-sm); color: var(--text); text-decoration: none;
+  transition: background .15s;
+}
+.nav-lab-dropdown > a:hover { background: var(--surface2); }
+.nav-lab-dropdown > a span { font-size: 1.3rem; flex-shrink: 0; }
+.nav-lab-dropdown > a strong { font-size: .85rem; display: block; color: var(--text); -webkit-text-fill-color: initial; }
+.nav-lab-dropdown > a small { font-size: .72rem; color: var(--text2); display: block; margin-top: 1px; }
+.nav-lab-footer { font-size: .7rem; color: var(--text2); text-align: center; padding: 8px 0 4px; border-top: 1px solid var(--border); margin-top: 4px; }
+.nav-lab-footer a { color: var(--accent); }
+
 /* --- Hero --- */
 .hero {
   text-align: center;
@@ -394,6 +417,11 @@ a:hover { color: #c4b5fd; }
     background: var(--bg); border-bottom: 1px solid var(--border);
     padding: 12px 20px; gap: 14px;
   }
+  .nav-lab-dropdown { position: static; box-shadow: none; border: none; background: transparent; padding: 4px 0 0 20px; min-width: auto; }
+  .nav-lab:hover .nav-lab-dropdown { display: none; }
+  .nav-lab.open .nav-lab-dropdown { display: block; }
+  .nav-lab-dropdown > a { padding: 6px 8px; }
+  .nav-lab-footer { display: none; }
   .nav-toggle { display: block; }
   .hero { padding: 50px 16px 40px; }
   .hero h1 { font-size: 1.8rem; }
