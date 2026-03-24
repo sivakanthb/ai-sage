@@ -1,5 +1,5 @@
 /* ============================================================
-   AI Sage — App Logic
+   AI Buddy — App Logic
    SPA router, assessment engine, results rendering, landscape
    ============================================================ */
 
@@ -223,7 +223,7 @@
       <!-- Ecosystem -->
       <div class="section" style="padding-top:30px">
         <h2 class="section-title">Continue Your AI Journey</h2>
-        <p class="section-sub">AI Sage diagnosed where you stand. Now <strong>discover</strong> tools and <strong>deepen</strong> your skills.</p>
+        <p class="section-sub">AI Buddy diagnosed where you stand. Now <strong>discover</strong> tools and <strong>deepen</strong> your skills.</p>
         <div class="ecosystem-grid">
           <a href="https://myaicompass.vercel.app/" target="_blank" class="ecosystem-card" style="--eco-color:#60a5fa">
             <span class="ecosystem-icon">🧭</span>

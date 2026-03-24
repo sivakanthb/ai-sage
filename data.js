@@ -1,10 +1,10 @@
 /* ============================================================
-   AI Sage — Data Layer
+   AI Buddy — Data Layer
    All personas, questions, action plans, landscape data
    ============================================================ */
 
 const APP = {
-  name: 'AI Sage',
+  name: 'AI Buddy',
   tagline: 'Your trusted companion for the AI era',
   version: '1.0',
   author: 'Sivakanth Badigenchala',
