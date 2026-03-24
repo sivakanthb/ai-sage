@@ -20,7 +20,7 @@
   --radius-sm: 8px;
   --shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
   --ease: .3s cubic-bezier(.4,0,.2,1);
-  --max-w: 1100px;
+  --max-w: 1280px;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -94,7 +94,7 @@ a:hover { color: var(--accent2); }
 /* --- Hero --- */
 .hero {
   text-align: center;
-  padding: 48px 20px 36px;
+  padding: 40px 40px 32px;
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
@@ -106,22 +106,22 @@ a:hover { color: var(--accent2); }
   pointer-events: none;
   z-index: -1;
 }
-.hero-icon { font-size: 3.5rem; margin-bottom: 16px; display: block; }
+.hero-icon { font-size: 3rem; margin-bottom: 12px; display: block; }
 .hero h1 {
-  font-size: clamp(2rem, 5vw, 3rem); font-weight: 800;
+  font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 800;
   color: var(--text);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 .hero .tagline {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  color: var(--text2); max-width: 700px; margin: 0 auto 28px;
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  color: var(--text2); max-width: 900px; margin: 0 auto 24px;
   line-height: 1.6;
 }
 .hero .provocation {
-  font-size: 1.05rem; color: var(--text);
+  font-size: .98rem; color: var(--text);
   background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 20px 28px;
-  max-width: 740px; margin: 0 auto 32px;
+  max-width: 900px; margin: 0 auto 28px;
   line-height: 1.75; position: relative;
 }
 .hero .provocation::before {
