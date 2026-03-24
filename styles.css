@@ -68,7 +68,7 @@ a:hover { color: var(--accent2); }
 .nav-links a:hover, .nav-links a.active { color: var(--accent); }
 .nav-toggle { display: none; background: none; border: none; color: var(--text); font-size: 1.4rem; cursor: pointer; }
 
-/* Nav — AI Lab dropdown (was AI Sage) */
+/* Nav — AI Lab dropdown */
 .nav-lab { position: relative; }
 .nav-lab-trigger { cursor: pointer; }
 .nav-lab-dropdown {
