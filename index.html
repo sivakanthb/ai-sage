@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Sage — Your Trusted Companion for the AI Era</title>
+  <meta name="description" content="AI Sage — a personalized guide to navigate the AI disruption. Assessment, action plans, and honest insights for every professional — from students to executives.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧘</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand" onclick="showPage('home');return false">
+      <span>🧘</span> AI Sage
+    </a>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="#" data-page="home" class="active">Home</a></li>
+      <li><a href="#" data-page="assess">Assessment</a></li>
+      <li><a href="#" data-page="results">Results</a></li>
+      <li><a href="#" data-page="landscape">Landscape</a></li>
+      <li><a href="#" data-page="reality">Reality Check</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== PAGE: HOME ===== -->
+<div id="home" class="page active">
+
+  <section class="hero">
+    <span class="hero-icon">🧘</span>
+    <h1>AI Sage</h1>
+    <p class="tagline">Your trusted companion for the AI era — honest guidance, personalized to you.</p>
+    <div class="provocation">
+      AI has changed everything — how software gets built, how teams operate, how careers evolve.
+      The question isn't <em>whether</em> it affects you. It's <strong>what you do next</strong>.
+      <br><br>
+      Whether you're a student about to start your first CS degree, a developer who's coded for 20 years,
+      a leader making strategic bets, or a professional in any field watching AI reshape your world —
+      <strong>AI Sage</strong> meets you where you are and shows you a path forward.
+    </div>
+    <div class="btn-group">
+      <a href="#personas" class="btn btn-primary" onclick="document.getElementById('personas').scrollIntoView({behavior:'smooth'});return false">
+        Find Your Path →
+      </a>
+      <a href="#" class="btn btn-secondary" onclick="showPage('landscape');return false">
+        🗺️ Explore the Landscape
+      </a>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section" id="how">
+    <div class="container">
+      <h2 class="section-title">How AI Sage Works</h2>
+      <p class="section-sub">Three steps — five minutes — and you'll know exactly where you stand and what to do next.</p>
+      <div class="persona-grid" style="grid-template-columns: repeat(3, 1fr); max-width: 800px; margin: 0 auto;">
+        <div class="persona-card" style="cursor:default;--card-accent:var(--accent)">
+          <div class="icon">🪞</div>
+          <h3>1. Mirror</h3>
+          <div class="desc">Choose your persona and take a quick AI readiness assessment. Discover where you truly stand across 5 dimensions.</div>
+        </div>
+        <div class="persona-card" style="cursor:default;--card-accent:var(--green)">
+          <div class="icon">🗺️</div>
+          <h3>2. Map</h3>
+          <div class="desc">See the AI disruption landscape — what's dying, what's emerging, how roles are evolving, and where the world is heading.</div>
+        </div>
+        <div class="persona-card" style="cursor:default;--card-accent:var(--blue)">
+          <div class="icon">🧭</div>
+          <h3>3. Path</h3>
+          <div class="desc">Get a personalized 30/60/90-day action plan. Not generic advice — specific, week-by-week moves for your persona.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Persona Picker -->
+  <section class="section" id="personas" style="padding-top:40px">
+    <div class="container">
+      <h2 class="section-title">Who Are You?</h2>
+      <p class="section-sub">Select the persona that best describes you. Your assessment and action plan will be personalized accordingly.</p>
+      <div class="persona-grid" id="personaGrid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats -->
+  <section class="section" style="padding-top:20px">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;max-width:800px;margin:0 auto;text-align:center">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px">
+          <div style="font-size:2rem;font-weight:900;color:var(--accent)">8</div>
+          <div style="font-size:.82rem;color:var(--text2)">Professional Personas</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px">
+          <div style="font-size:2rem;font-weight:900;color:var(--green)">64</div>
+          <div style="font-size:.82rem;color:var(--text2)">Assessment Questions</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px">
+          <div style="font-size:2rem;font-weight:900;color:var(--blue)">96</div>
+          <div style="font-size:.82rem;color:var(--text2)">Action Plan Items</div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px">
+          <div style="font-size:2rem;font-weight:900;color:var(--amber)">5</div>
+          <div style="font-size:.82rem;color:var(--text2)">Readiness Dimensions</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===== PAGE: ASSESSMENT ===== -->
+<div id="assess" class="page">
+  <section class="section">
+    <div class="container" id="assessContent">
+      <div class="assess-wrap" style="text-align:center;padding-top:60px">
+        <p style="font-size:1.1rem;color:var(--text2)">Please select a persona first to begin your assessment.</p>
+        <br>
+        <button class="btn btn-primary" onclick="showPage('home');document.getElementById('personas').scrollIntoView({behavior:'smooth'})">Choose Your Persona →</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== PAGE: RESULTS ===== -->
+<div id="results" class="page">
+  <section class="section">
+    <div class="container" id="resultsContent">
+      <div class="assess-wrap" style="text-align:center;padding-top:60px">
+        <p style="font-size:1.1rem;color:var(--text2)">Complete the assessment first to see your results.</p>
+        <br>
+        <button class="btn btn-primary" onclick="showPage('home');document.getElementById('personas').scrollIntoView({behavior:'smooth'})">Start Assessment →</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== PAGE: LANDSCAPE ===== -->
+<div id="landscape" class="page">
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">The AI Disruption Landscape</h2>
+      <p class="section-sub">A living map of what's changing. From practices that are already dead to what's coming next.</p>
+    </div>
+  </section>
+
+  <!-- Shift Timeline -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <h2 class="section-title" style="font-size:1.2rem">The Shift Timeline</h2>
+      <p class="section-sub">What's dead, what's dying, what's emerging, and what's next.</p>
+      <div class="timeline-grid" id="timelineGrid"></div>
+    </div>
+  </section>
+
+  <!-- Role Evolution -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" style="font-size:1.2rem">How Roles Are Evolving</h2>
+      <p class="section-sub">Every role is transforming. Here's where each one is heading.</p>
+      <div class="role-grid" id="roleGrid"></div>
+    </div>
+  </section>
+
+  <!-- Architecture Shifts -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title" style="font-size:1.2rem">Architecture Evolution</h2>
+      <p class="section-sub">How systems and practices are being redesigned for the AI era.</p>
+      <div class="arch-grid" id="archGrid"></div>
+    </div>
+  </section>
+
+  <div style="text-align:center;padding:20px 0 40px" class="btn-group">
+    <a href="#" class="btn btn-secondary" onclick="showPage('reality');return false">→ Reality Check: Myths vs. Truth</a>
+    <a href="#" class="btn btn-primary" onclick="showPage('home');document.getElementById('personas').scrollIntoView({behavior:'smooth'});return false">Take the Assessment →</a>
+  </div>
+</div>
+
+<!-- ===== PAGE: REALITY CHECK ===== -->
+<div id="reality" class="page">
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Reality Check</h2>
+      <p class="section-sub">AI Sage is honest, not hype. Here's what the noise gets wrong — and what actually matters.</p>
+      <div class="reality-grid" id="realityGrid"></div>
+    </div>
+  </section>
+  <div style="text-align:center;padding:20px 0 40px" class="btn-group">
+    <a href="#" class="btn btn-secondary" onclick="showPage('landscape');return false">← Explore the Landscape</a>
+    <a href="#" class="btn btn-primary" onclick="showPage('home');document.getElementById('personas').scrollIntoView({behavior:'smooth'});return false">Take the Assessment →</a>
+  </div>
+</div>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <p>&copy; 2026 AI Sage &middot; Built by <a href="https://sivakanth.vercel.app/" target="_blank">Sivakanth Badigenchala</a></p>
+  <p style="margin-top:6px">Inspired by <a href="https://airise.vercel.app/" target="_blank">AiRISE</a> &middot; <a href="https://myaicompass.vercel.app/" target="_blank">AI Compass</a></p>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
