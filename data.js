@@ -1,10 +1,10 @@
 /* ============================================================
-   AI Buddy — Data Layer
+   AI Vantage — Data Layer
    All personas, questions, action plans, landscape data
    ============================================================ */
 
 const APP = {
-  name: 'AI Buddy',
+  name: 'AI Vantage',
   tagline: 'Your trusted companion for the AI era',
   version: '1.0',
   author: 'Sivakanth Badigenchala',

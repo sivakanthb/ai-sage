@@ -1,5 +1,5 @@
 /* ============================================================
-   AI Buddy — App Logic
+   AI Vantage — App Logic
    SPA router, assessment engine, results rendering, landscape
    ============================================================ */
 
@@ -34,7 +34,7 @@
 
   /* ---- Nav ---- */
   function bindNav() {
-    $$('.nav-links a').forEach(a => {
+    $$('.nav-links a[data-page]').forEach(a => {
       a.addEventListener('click', e => {
         e.preventDefault();
         const page = a.dataset.page;
@@ -223,7 +223,7 @@
       <!-- Ecosystem -->
       <div class="section" style="padding-top:30px">
         <h2 class="section-title">Continue Your AI Journey</h2>
-        <p class="section-sub">AI Buddy diagnosed where you stand. Now <strong>discover</strong> tools and <strong>deepen</strong> your skills.</p>
+        <p class="section-sub">AI Vantage diagnosed where you stand. Now <strong>discover</strong> tools and <strong>deepen</strong> your skills.</p>
         <div class="ecosystem-grid">
           <a href="https://myaicompass.vercel.app/" target="_blank" class="ecosystem-card" style="--eco-color:#60a5fa">
             <span class="ecosystem-icon">🧭</span>
